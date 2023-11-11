@@ -1,42 +1,42 @@
-# QuizApp
-# QuizAPP using .net 7 and WPF (c) 2023 - 2024.
-Tnis App it reads the questions and the Answers from a JSOM file shuufle them and the game is starting by puting the first question on screen. You can use multiple JSON files. When the game starts it allows you to choose witch JSON file you want to load.
-
-#JSON format
-[
-    {
-        "question": "Ποια απο αυτές ΔΕΝ είναι γλώσσες προγραμματισμού?",
-        "answers": [
-            {
-                "correct": true,
-                "text": "HTML"
-            },
-            {
-                "correct": false,
-                "text": "PHP"
-            },
-            {
-                "correct": false,
-                "text": "JAVASCRIPT"
-            },
-            {
-                "correct": false,
-                "text": "RUBY"
-            }
-        ]
-    },
-    {
-        "question": "Ποια απο αυτές ΔΕΝ είναι HTML tags?",
-        "answers": [
-            {
-                "correct": false,
-                "text": "HTML"
-            },
-            {
-                "correct": false,
-                "text": "BODY"
-            },
-            {
+# QuizApp<br>
+# QuizAPP using .net 7 and WPF (c) 2023 - 2024.<br>
+Tnis App it reads the questions and the Answers from a JSOM file shuufle them and the game is starting by puting the first question on screen. You can use multiple JSON files. When the game starts it allows you to choose witch JSON file you want to load.<br>
+<br>
+#JSON format<br>
+[<br>
+    {<br>
+        "question": "Ποια απο αυτές ΔΕΝ είναι γλώσσες προγραμματισμού?",<br>
+        "answers": [<br>
+            {<br>
+                "correct": true,<br>
+                "text": "HTML"<br>
+            },<br>
+            {<br>
+                "correct": false,<br>
+                "text": "PHP"<br>
+            },<br>
+            {<br>
+                "correct": false,<br>
+                "text": "JAVASCRIPT"<br>
+            },<br>
+            {<br>
+                "correct": false,<br>
+                "text": "RUBY"<br>
+            }<br>
+        ]<br>
+    },<br>
+    {<br>
+        "question": "Ποια απο αυτές ΔΕΝ είναι HTML tags?",<br>
+        "answers": [<br>
+            {<br>
+                "correct": false,<br>
+                "text": "HTML"<br>
+            },<br>
+            {<br>
+                "correct": false,<br>
+                "text": "BODY"<br>
+            },<br>
+            {<br>
                 "correct": false,
                 "text": "DIV"
             },
