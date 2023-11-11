@@ -37,78 +37,78 @@ Tnis App it reads the questions and the Answers from a JSOM file shuufle them an
                 "text": "BODY"<br>
             },<br>
             {<br>
-                "correct": false,
-                "text": "DIV"
-            },
-            {
-                "correct": true,
-                "text": "SPAM"
-            }
-        ]
-    },
-    {
-        "question": "Πώς βρισκουμε το μέγεθος μιας λίστας?",
-        "answers": [
-            {
-                "correct": false,
-                "text": "size"
-            },
-            {
-                "correct": false,
-                "text": "indexOf"
-            },
-            {
-                "correct": false,
-                "text": "val()"
-            },
-            {
-                "correct": true,
-                "text": "length"
-            }
-        ]
-    },
-	{
-        "question": "Πόιά χρονιά ιδρύθηκε η APPLE?",
-        "answers": [
-            {
-                "correct": true,
-                "text": "1976"
-            },
-            {
-                "correct": false,
-                "text": "1970"
-            },
-            {
-                "correct": false,
-                "text": "1968"
-            },
-            {
-                "correct": false,
-                "text": "1980"
-            }
-        ]
-    },
-	{
-        "question": "Ποιος χαρακτήρας ΔΕΝ υπήρχε στην ταινία Pirates of Silicon Valley",
-        "answers": [
-            {
-                "correct": false,
-                "text": "Steve Jobs"
-            },
-            {
-                "correct": false,
-                "text": "Bill Gates"
-            },
-            {
-                "correct": true,
-                "text": "Wilcox"
-            },
-            {
-                "correct": false,
-                "text": "Paul Allen"
-            }
-        ]
-    }
-]
-
-This Game was created by NIkolaos Psaltakis for Personal Use.
+                "correct": false,<br>
+                "text": "DIV"<br>
+            },<br>
+            {<br>
+                "correct": true,<br>
+                "text": "SPAM"<br>
+            }<br>
+        ]<br>
+    },<br>
+    {<br>
+        "question": "Πώς βρισκουμε το μέγεθος μιας λίστας?",<br>
+        "answers": [<br>
+            {<br>
+                "correct": false,<br>
+                "text": "size"<br>
+            },<br>
+            {<br>
+                "correct": false,<br>
+                "text": "indexOf"<br>
+            },<br>
+            {<br>
+                "correct": false,<br>
+                "text": "val()"<br>
+            },<br>
+            {<br>
+                "correct": true,<br>
+                "text": "length"<br>
+            }<br>
+        ]<br>
+    },<br>
+	{<br>
+        "question": "Πόιά χρονιά ιδρύθηκε η APPLE?",<br>
+        "answers": [<br>
+            {<br>
+                "correct": true,<br>
+                "text": "1976"<br>
+            },<br>
+            {<br>
+                "correct": false,<br>
+                "text": "1970"<br>
+            },<br>
+            {<br>
+                "correct": false,<br>
+                "text": "1968"<br>
+            },<br>
+            {<br>
+                "correct": false,<br>
+                "text": "1980"<br>
+            }<br>
+        ]<br>
+    },<br>
+	{<br>
+        "question": "Ποιος χαρακτήρας ΔΕΝ υπήρχε στην ταινία Pirates of Silicon Valley",<br>
+        "answers": [<br>
+            {<br>
+                "correct": false,<br>
+                "text": "Steve Jobs"<br>
+            },<br>
+            {<br>
+                "correct": false,<br>
+                "text": "Bill Gates"<br>
+            },<br>
+            {<br>
+                "correct": true,<br>
+                "text": "Wilcox"<br>
+            },<br>
+            {<br>
+                "correct": false,<br>
+                "text": "Paul Allen"<br>
+            }<br>
+        ]<br>
+    }<br>
+]<br>
+<br>
+This Game was created by NIkolaos Psaltakis for Personal Use.<br>
