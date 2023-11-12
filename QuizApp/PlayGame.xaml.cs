@@ -1,7 +1,6 @@
 ﻿using QuizApp.Data;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
@@ -24,7 +23,7 @@ namespace QuizApp
         {
             InitializeComponent();
             Quizquestions = LoadQuestions(filename);
-            ShuffleQuestions<QuizData>();
+            ShuffleQuestions();
             TotalNumberQuestions = Quizquestions.Count;
             UpdateContent();
         }
@@ -47,8 +46,8 @@ namespace QuizApp
 
         private void UpdateContent()
         {
-            ShuffleAnswers<QuizData>();
-            CurrentQuestion.Content = $"{IndexQuestion + 1}/{TotalNumberQuestions} {Quizquestions[IndexQuestion].question}";
+            ShuffleAnswers();
+            CurrentQuestion.Text = $"{IndexQuestion + 1}/{TotalNumberQuestions} {Quizquestions[IndexQuestion].question}";
             Answer1.Content = $"{Quizquestions[IndexQuestion].Answers[0].Text}";
             Answer2.Content = $"{Quizquestions[IndexQuestion].Answers[1].Text}";
             Answer3.Content = $"{Quizquestions[IndexQuestion].Answers[2].Text}";
@@ -57,8 +56,12 @@ namespace QuizApp
 
         private void backBtn(object sender, RoutedEventArgs e)
         {
-            Window window = Window.GetWindow(this);
-            window.Content = new QuizMenu();
+            MessageBoxResult result = MessageBox.Show("Θέλεις σίγουρα να ακυρώσεις το παιχνίδι και να πειστρέψεις πίσω???", "Confirmation", MessageBoxButton.OKCancel);
+            if (result == MessageBoxResult.OK)
+            {
+                Window window = Window.GetWindow(this);
+                window.Content = new QuizMenu();
+            }
         }
 
         private void answer_clicked(object sender, RoutedEventArgs e)
@@ -92,13 +95,13 @@ namespace QuizApp
             }
         }
 
-        private void ShuffleQuestions<QuizData>()
+        private void ShuffleQuestions()
         {
             Random random = new Random();
             Quizquestions = Quizquestions.OrderBy(x => random.Next()).ToList();
         }
 
-        private void ShuffleAnswers<QuizData>()
+        private void ShuffleAnswers()
         {
             Random random = new Random();
             Quizquestions[IndexQuestion].Answers = Quizquestions[IndexQuestion].Answers.OrderBy(x => random.Next()).ToList();
