@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Path = System.IO.Path;
 
 namespace QuizApp
 {
@@ -47,7 +48,8 @@ namespace QuizApp
                     // Add each .dat file to the ListBox
                     foreach (string datFile in datFiles)
                     {
-                        MainList.Items.Add(datFile);
+                        
+                        MainList.Items.Add(Path.GetFileNameWithoutExtension(datFile));
                     }
                 }else
                 {

@@ -30,7 +30,7 @@ namespace QuizApp
 
         private List<QuizData> LoadQuestions(string filename)
         {
-            string path = filename;
+            string path = $"Data/{filename}.dat";
             // Create a new StreamReader object to read the contents of the JSON file.
             StreamReader reader = new StreamReader(path);
             // Read the contents of the JSON file into a string variable.
@@ -46,6 +46,7 @@ namespace QuizApp
 
         private void UpdateContent()
         {
+            //updating quesions and possible answers
             ShuffleAnswers();
             CurrentQuestion.Text = $"{IndexQuestion + 1}/{TotalNumberQuestions} {Quizquestions[IndexQuestion].question}";
             Answer1.Content = $"{Quizquestions[IndexQuestion].Answers[0].Text}";
@@ -80,12 +81,15 @@ namespace QuizApp
                     player.WrongAnswers++;
                 }
             }
+            //checking if questions re finished
             if (IndexQuestion < TotalNumberQuestions - 1)
             {
+                //next question
                 IndexQuestion++;
                 UpdateContent();
             }else
             {
+                //end game
                 string message = "Το παιχνίδι Τελείωσε\n";
                 message += $"Βρήκατε {player.WriteAnswers}/{TotalNumberQuestions} Σωστά\n";
                 message += $"Έκανες {player.WrongAnswers} Λάθοι";
