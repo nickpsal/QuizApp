@@ -1,5 +1,6 @@
 # QuizApp<br>
 # QuizAPP using .net 7 and WPF (c) 2023 - 2024.<br>
+Update it works with .net 7 anf .net 8 <br>
 Tnis App it reads the questions and the Answers from a JSOM file shuufle them and the game is starting by puting the first question on screen. You can use multiple JSON files. When the game starts it allows you to choose witch JSON file you want to load.<br>
 <br>
 #JSON format<br>
