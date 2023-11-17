@@ -111,4 +111,4 @@ Tnis App it reads the questions and the Answers from a JSOM file shuufle them an
     }<br>
 ]<br>
 <br>
-This Game was created by NIkolaos Psaltakis for Personal Use.<br>
+This Game was created by NIkolaos Psaltakis for Personal Use using C# and WPF.<br>
