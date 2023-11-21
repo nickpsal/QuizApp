@@ -57,7 +57,7 @@ namespace QuizApp
 
         private void backBtn(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("Θέλεις σίγουρα να ακυρώσεις το παιχνίδι και να πειστρέψεις πίσω???", "Confirmation", MessageBoxButton.OKCancel);
+            MessageBoxResult result = MessageBox.Show("Θέλεις σίγουρα να ακυρώσεις το παιχνίδι και να επιστρέψεις πίσω στο αρχικό μενού???", "Confirmation", MessageBoxButton.OKCancel);
             if (result == MessageBoxResult.OK)
             {
                 Window window = Window.GetWindow(this);
